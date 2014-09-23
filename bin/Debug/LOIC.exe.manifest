@@ -43,13 +43,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IRC.dll" size="92672">
-      <assemblyIdentity name="IRC" version="0.4.0.40141" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="IRC" version="0.4.0.790" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5NiYrcFpQUZD2G5JgGQu7lrEKNE=</dsig:DigestValue>
+        <dsig:DigestValue>oBWzjx33UPGdPfc330Kysj7vVjM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,11 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-<<<<<<< HEAD
-        <dsig:DigestValue>aJ6Eoqlo4I1c5VM/v9qibkg8XMo=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>6Hat+DfxgcrGhn1vcs6dEhnLNXg=</dsig:DigestValue>
->>>>>>> parent of e5624a2... 修复乱码
+        <dsig:DigestValue>d7d+1q7HwKYYGFbxsH9EhIZP3+A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

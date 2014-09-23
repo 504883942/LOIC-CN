@@ -1,4 +1,4 @@
-namespace LOIC
+ï»¿namespace LOIC
 {
 	partial class frmMain
 	{
@@ -111,7 +111,7 @@ namespace LOIC
             this.groupBox1.Size = new System.Drawing.Size(488, 75);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "1. Ñ¡ÔñÄãµÄ±¬¾ÕÄ¿±ê";
+            this.groupBox1.Text = "1. é€‰æ‹©ä½ çš„çˆ†èŠç›®æ ‡";
             // 
             // label2
             // 
@@ -130,7 +130,7 @@ namespace LOIC
             this.cmdTargetIP.Name = "cmdTargetIP";
             this.cmdTargetIP.Size = new System.Drawing.Size(71, 22);
             this.cmdTargetIP.TabIndex = 4;
-            this.cmdTargetIP.Text = "Ëø ¶¨";
+            this.cmdTargetIP.Text = "é” å®š";
             this.cmdTargetIP.UseVisualStyleBackColor = false;
             this.cmdTargetIP.Click += new System.EventHandler(this.cmdTargetIP_Click);
             // 
@@ -143,7 +143,7 @@ namespace LOIC
             this.txtTargetIP.Name = "txtTargetIP";
             this.txtTargetIP.Size = new System.Drawing.Size(365, 20);
             this.txtTargetIP.TabIndex = 3;
-            this.TTip.SetToolTip(this.txtTargetIP, "Èç¹ûÄãÖªµÀÄ¿±êµÄIP£¬ÇëÊäÈë²¢ ¡°Ëø¶¨¡±");
+            this.TTip.SetToolTip(this.txtTargetIP, "å¦‚æœä½ çŸ¥é“ç›®æ ‡çš„IPï¼Œè¯·è¾“å…¥å¹¶ â€œé”å®šâ€");
             // 
             // label1
             // 
@@ -162,7 +162,7 @@ namespace LOIC
             this.cmdTargetURL.Name = "cmdTargetURL";
             this.cmdTargetURL.Size = new System.Drawing.Size(71, 22);
             this.cmdTargetURL.TabIndex = 2;
-            this.cmdTargetURL.Text = "Ëø ¶¨";
+            this.cmdTargetURL.Text = "é” å®š";
             this.cmdTargetURL.UseVisualStyleBackColor = false;
             this.cmdTargetURL.Click += new System.EventHandler(this.cmdTargetURL_Click);
             // 
@@ -175,7 +175,7 @@ namespace LOIC
             this.txtTargetURL.Name = "txtTargetURL";
             this.txtTargetURL.Size = new System.Drawing.Size(365, 20);
             this.txtTargetURL.TabIndex = 1;
-            this.TTip.SetToolTip(this.txtTargetURL, "Èç¹ûÄã²»ÖªµÀÄ¿±êµÄIP£¬ÇëÊäÈëURL £¨ÍøÖ·£©²¢ ¡°Ëø¶¨¡±");
+            this.TTip.SetToolTip(this.txtTargetURL, "å¦‚æœä½ ä¸çŸ¥é“ç›®æ ‡çš„IPï¼Œè¯·è¾“å…¥URL ï¼ˆç½‘å€ï¼‰å¹¶ â€œé”å®šâ€");
             // 
             // groupBox2
             // 
@@ -186,7 +186,7 @@ namespace LOIC
             this.groupBox2.Size = new System.Drawing.Size(758, 96);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ëø¶¨µÄÄ¿±ê IP";
+            this.groupBox2.Text = "é”å®šçš„ç›®æ ‡ IP";
             // 
             // txtTarget
             // 
@@ -199,9 +199,9 @@ namespace LOIC
             this.txtTarget.Size = new System.Drawing.Size(746, 72);
             this.txtTarget.TabIndex = 1;
             this.txtTarget.TabStop = false;
-            this.txtTarget.Text = "Î´ Ëø ¶¨ !";
+            this.txtTarget.Text = "æœª é” å®š !";
             this.txtTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtTarget, "µ±Ç°Ñ¡ÖĞµÄ±¬¾ÕÄ¿±ê");
+            this.TTip.SetToolTip(this.txtTarget, "å½“å‰é€‰ä¸­çš„çˆ†èŠç›®æ ‡");
             this.txtTarget.Enter += new System.EventHandler(this.txtTarget_Enter);
             // 
             // groupBox3
@@ -229,7 +229,7 @@ namespace LOIC
             this.groupBox3.Size = new System.Drawing.Size(758, 136);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "2. Ñ¡ÔñÄãµÄ±¬¾Õ·½Ê½";
+            this.groupBox3.Text = "2. é€‰æ‹©ä½ çš„çˆ†èŠæ–¹å¼";
             // 
             // chkAllowGzip
             // 
@@ -239,8 +239,8 @@ namespace LOIC
             this.chkAllowGzip.Name = "chkAllowGzip";
             this.chkAllowGzip.Size = new System.Drawing.Size(114, 18);
             this.chkAllowGzip.TabIndex = 29;
-            this.chkAllowGzip.Text = "Ê¹ÓÃ Gzip (HTTP)";
-            this.TTip.SetToolTip(this.chkAllowGzip, "¿ªÆôHTTPµÄGzipÑ¹Ëõ¸ñÊ½Ö§³Ö");
+            this.chkAllowGzip.Text = "ä½¿ç”¨ Gzip (HTTP)";
+            this.TTip.SetToolTip(this.chkAllowGzip, "å¼€å¯HTTPçš„Gzipå‹ç¼©æ ¼å¼æ”¯æŒ");
             // 
             // label18
             // 
@@ -248,7 +248,7 @@ namespace LOIC
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(124, 16);
             this.label18.TabIndex = 25;
-            this.label18.Text = "·¢ËÍµÄ TCP / UDP ĞÅÏ¢";
+            this.label18.Text = "å‘é€çš„ TCP / UDP ä¿¡æ¯";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chkAllowRandom
@@ -258,8 +258,8 @@ namespace LOIC
             this.chkAllowRandom.Name = "chkAllowRandom";
             this.chkAllowRandom.Size = new System.Drawing.Size(170, 18);
             this.chkAllowRandom.TabIndex = 28;
-            this.chkAllowRandom.Text = "Éú³ÉËæ»ú×ÓÍøÕ¾»òËæ»úĞÅÏ¢";
-            this.TTip.SetToolTip(this.chkAllowRandom, "¿ªÆôÉú³ÉËæ»ú×ÓÍøÕ¾»òËæ»úĞÅÏ¢¹¦ÄÜ");
+            this.chkAllowRandom.Text = "ç”Ÿæˆéšæœºå­ç½‘ç«™æˆ–éšæœºä¿¡æ¯";
+            this.TTip.SetToolTip(this.chkAllowRandom, "å¼€å¯ç”Ÿæˆéšæœºå­ç½‘ç«™æˆ–éšæœºä¿¡æ¯åŠŸèƒ½");
             this.chkAllowRandom.UseVisualStyleBackColor = true;
             // 
             // label17
@@ -268,7 +268,7 @@ namespace LOIC
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(89, 17);
             this.label17.TabIndex = 24;
-            this.label17.Text = "HTTP ×ÓÍøÕ¾";
+            this.label17.Text = "HTTP å­ç½‘ç«™";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -277,7 +277,7 @@ namespace LOIC
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 15);
             this.label9.TabIndex = 23;
-            this.label9.Text = "³¬Ê±";
+            this.label9.Text = "è¶…æ—¶";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -286,7 +286,7 @@ namespace LOIC
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 15);
             this.label7.TabIndex = 22;
-            this.label7.Text = "Ïß³Ì";
+            this.label7.Text = "çº¿ç¨‹";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -295,7 +295,7 @@ namespace LOIC
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 15);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Ä£Ê½";
+            this.label4.Text = "æ¨¡å¼";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -304,7 +304,7 @@ namespace LOIC
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 15);
             this.label6.TabIndex = 20;
-            this.label6.Text = "¶Ë¿Ú";
+            this.label6.Text = "ç«¯å£";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
@@ -313,7 +313,7 @@ namespace LOIC
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(374, 15);
             this.label20.TabIndex = 18;
-            this.label20.Text = "<= ¿ì       ±¬¾ÕËÙ¶È       Âı =>";
+            this.label20.Text = "<= å¿«       çˆ†èŠé€Ÿåº¦       æ…¢ =>";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chkWaitReply
@@ -325,8 +325,8 @@ namespace LOIC
             this.chkWaitReply.Name = "chkWaitReply";
             this.chkWaitReply.Size = new System.Drawing.Size(98, 18);
             this.chkWaitReply.TabIndex = 7;
-            this.chkWaitReply.Text = "µÈ´ıÄ¿±ê´ğ¸´";
-            this.TTip.SetToolTip(this.chkWaitReply, "·şÎñÆ÷Ó¦´ğÖ®Ç°²»Í£Ö¹Á¬½Ó");
+            this.chkWaitReply.Text = "ç­‰å¾…ç›®æ ‡ç­”å¤";
+            this.TTip.SetToolTip(this.chkWaitReply, "æœåŠ¡å™¨åº”ç­”ä¹‹å‰ä¸åœæ­¢è¿æ¥");
             this.chkWaitReply.UseVisualStyleBackColor = true;
             // 
             // txtData
@@ -370,7 +370,7 @@ namespace LOIC
             this.txtTimeout.TabIndex = 1;
             this.txtTimeout.Text = "9001";
             this.txtTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtTimeout, "×î´óÎ´ÏìÓ¦Ê±¼ä");
+            this.TTip.SetToolTip(this.txtTimeout, "æœ€å¤§æœªå“åº”æ—¶é—´");
             // 
             // txtThreads
             // 
@@ -384,7 +384,7 @@ namespace LOIC
             this.txtThreads.TabIndex = 6;
             this.txtThreads.Text = "10";
             this.txtThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtThreads, "ÄãÒª¶àÉÙ±¬¾ÕµÄÏß³Ì");
+            this.TTip.SetToolTip(this.txtThreads, "ä½ è¦å¤šå°‘çˆ†èŠçš„çº¿ç¨‹");
             // 
             // cbMethod
             // 
@@ -402,7 +402,7 @@ namespace LOIC
             this.cbMethod.Size = new System.Drawing.Size(75, 22);
             this.cbMethod.TabIndex = 5;
             this.cbMethod.Text = "TCP";
-            this.TTip.SetToolTip(this.cbMethod, "ÄãÏëÒª±¬¾ÕµÄ·½Ê½");
+            this.TTip.SetToolTip(this.cbMethod, "ä½ æƒ³è¦çˆ†èŠçš„æ–¹å¼");
             this.cbMethod.SelectedIndexChanged += new System.EventHandler(this.cbMethod_SelectedIndexChanged);
             // 
             // txtPort
@@ -417,7 +417,7 @@ namespace LOIC
             this.txtPort.TabIndex = 4;
             this.txtPort.Text = "80";
             this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtPort, "ÄãÏëÒª±¬¾ÕµÄ¶Ë¿Ú£¨ÍøÕ¾Ä¬ÈÏÊÇ80¶Ë¿Ú£©");
+            this.TTip.SetToolTip(this.txtPort, "ä½ æƒ³è¦çˆ†èŠçš„ç«¯å£ï¼ˆç½‘ç«™é»˜è®¤æ˜¯80ç«¯å£ï¼‰");
             // 
             // tbSpeed
             // 
@@ -438,7 +438,7 @@ namespace LOIC
             this.groupBox4.Size = new System.Drawing.Size(258, 75);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "3. ×¼±¸ºÃÁË?";
+            this.groupBox4.Text = "3. å‡†å¤‡å¥½äº†?";
             // 
             // cmdAttack
             // 
@@ -449,8 +449,8 @@ namespace LOIC
             this.cmdAttack.Name = "cmdAttack";
             this.cmdAttack.Size = new System.Drawing.Size(246, 50);
             this.cmdAttack.TabIndex = 1;
-            this.cmdAttack.Text = "¿ª Ê¼ ±¬ ¾Õ";
-            this.TTip.SetToolTip(this.cmdAttack, "²Â²ÂÄ¿±ê¾Õ»¨»áÔõÑù£¿");
+            this.cmdAttack.Text = "å¼€ å§‹ çˆ† èŠ";
+            this.TTip.SetToolTip(this.cmdAttack, "çŒœçŒœç›®æ ‡èŠèŠ±ä¼šæ€æ ·ï¼Ÿ");
             this.cmdAttack.UseVisualStyleBackColor = false;
             this.cmdAttack.Click += new System.EventHandler(this.cmdAttack_Click);
             // 
@@ -477,7 +477,7 @@ namespace LOIC
             this.groupBox5.Size = new System.Drawing.Size(758, 68);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "±¬¾Õ×´Ì¬";
+            this.groupBox5.Text = "çˆ†èŠçŠ¶æ€";
             // 
             // label19
             // 
@@ -514,7 +514,7 @@ namespace LOIC
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(101, 24);
             this.label22.TabIndex = 22;
-            this.label22.Text = "Ê§°Ü";
+            this.label22.Text = "å¤±è´¥";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
@@ -523,7 +523,7 @@ namespace LOIC
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(101, 24);
             this.label23.TabIndex = 21;
-            this.label23.Text = "ÇëÇó";
+            this.label23.Text = "è¯·æ±‚";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbDownloaded
@@ -578,7 +578,7 @@ namespace LOIC
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(101, 24);
             this.label12.TabIndex = 15;
-            this.label12.Text = "ÒÑÏÂÔØ";
+            this.label12.Text = "å·²ä¸‹è½½";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -587,7 +587,7 @@ namespace LOIC
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 24);
             this.label13.TabIndex = 14;
-            this.label13.Text = "ÕıÔÚÏÂÔØ";
+            this.label13.Text = "æ­£åœ¨ä¸‹è½½";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
@@ -596,7 +596,7 @@ namespace LOIC
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(101, 24);
             this.label14.TabIndex = 13;
-            this.label14.Text = "ÇëÇó";
+            this.label14.Text = "è¯·æ±‚";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -605,7 +605,7 @@ namespace LOIC
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(101, 24);
             this.label15.TabIndex = 12;
-            this.label15.Text = "Á¬½Ó";
+            this.label15.Text = "è¿æ¥";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
@@ -614,7 +614,7 @@ namespace LOIC
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(101, 24);
             this.label16.TabIndex = 11;
-            this.label16.Text = "¿ÕÏĞ";
+            this.label16.Text = "ç©ºé—²";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
@@ -625,7 +625,7 @@ namespace LOIC
             this.label24.Size = new System.Drawing.Size(167, 14);
             this.label24.TabIndex = 14;
             this.label24.Text = "github.com/darknessomi/LOIC-CN";
-            this.TTip.SetToolTip(this.label24, "Ç°ÍùÏîÄ¿Ö÷Ò³");
+            this.TTip.SetToolTip(this.label24, "å‰å¾€é¡¹ç›®ä¸»é¡µ");
             this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // enableHive
@@ -635,8 +635,8 @@ namespace LOIC
             this.enableHive.Name = "enableHive";
             this.enableHive.Size = new System.Drawing.Size(127, 18);
             this.enableHive.TabIndex = 16;
-            this.enableHive.Text = "IRC Ä£Ê½ (Ğ°¶ñ·ÖÉí)";
-            this.TTip.SetToolTip(this.enableHive, "Èç¹ûÄãÏë³ÉÎªĞ°¶ñ·ÖÉíµÄ»°£¬ÇëÑ¡Ôñ´ËÄ£Ê½");
+            this.enableHive.Text = "IRC æ¨¡å¼ (é‚ªæ¶åˆ†èº«)";
+            this.TTip.SetToolTip(this.enableHive, "å¦‚æœä½ æƒ³æˆä¸ºé‚ªæ¶åˆ†èº«çš„è¯ï¼Œè¯·é€‰æ‹©æ­¤æ¨¡å¼");
             this.enableHive.UseVisualStyleBackColor = true;
             this.enableHive.CheckedChanged += new System.EventHandler(this.enableHive_CheckedChanged);
             // 
@@ -654,7 +654,7 @@ namespace LOIC
             this.disableHive.Size = new System.Drawing.Size(169, 18);
             this.disableHive.TabIndex = 15;
             this.disableHive.TabStop = true;
-            this.disableHive.Text = "Ö÷»úÄ£Ê½£¨ÕâÊÇĞ°¶ñ±¾Ìå£©";
+            this.disableHive.Text = "ä¸»æœºæ¨¡å¼ï¼ˆè¿™æ˜¯é‚ªæ¶æœ¬ä½“ï¼‰";
             this.disableHive.UseVisualStyleBackColor = true;
             this.disableHive.CheckedChanged += new System.EventHandler(this.disableHive_CheckedChanged);
             // 
@@ -664,7 +664,7 @@ namespace LOIC
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(210, 16);
             this.label25.TabIndex = 17;
-            this.label25.Text = "Î´Á¬½Ó";
+            this.label25.Text = "æœªè¿æ¥";
             this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // txtIRCserver
@@ -706,7 +706,7 @@ namespace LOIC
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 14);
             this.label8.TabIndex = 21;
-            this.label8.Text = "IRC ·şÎñÆ÷";
+            this.label8.Text = "IRC æœåŠ¡å™¨";
             // 
             // label26
             // 
@@ -715,7 +715,7 @@ namespace LOIC
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(31, 14);
             this.label26.TabIndex = 22;
-            this.label26.Text = "¶Ë¿Ú";
+            this.label26.Text = "ç«¯å£";
             // 
             // label27
             // 
@@ -724,7 +724,7 @@ namespace LOIC
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(31, 14);
             this.label27.TabIndex = 23;
-            this.label27.Text = "ÆµµÀ";
+            this.label27.Text = "é¢‘é“";
             // 
             // pBanner
             // 

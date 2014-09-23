@@ -1,0 +1,5 @@
+\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC\bin\Debug\IRC.dll
+\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC\bin\Debug\IRC.pdb
+\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC\IRC\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC\IRC\obj\Debug\IRC.dll
+\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC\IRC\obj\Debug\IRC.pdb

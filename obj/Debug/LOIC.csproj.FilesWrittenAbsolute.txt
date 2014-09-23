@@ -1,0 +1,9 @@
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/obj/Debug/LOIC.frmMain.resources
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/obj/Debug/LOIC.frmWtf.resources
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/obj/Debug/LOIC.Properties.Resources.resources
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/LOIC.exe.mdb
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/LOIC.exe
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/obj/Debug/LOIC.exe
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/obj/Debug/LOIC.exe.mdb
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/IRC.dll
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/IRC.dll.mdb

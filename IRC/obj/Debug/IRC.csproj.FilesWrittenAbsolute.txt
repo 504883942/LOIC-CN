@@ -1,0 +1,4 @@
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/IRC.dll.mdb
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/IRC.dll
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/IRC/obj/Debug/IRC.dll
+/Users/omi/Documents/Visual Studio 2010/Projects/LOIC/IRC/obj/Debug/IRC.dll.mdb

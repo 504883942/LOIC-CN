@@ -11,14 +11,14 @@
     <deploymentProvider codebase="file://psf/Home/Desktop/LOIC.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LOIC.exe.manifest" size="4810">
+    <dependentAssembly dependencyType="install" codebase="LOIC.exe.manifest" size="4808">
       <assemblyIdentity name="LOIC.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>AKgJ7hgYDQxea6cjpUIANcuvIZQ=</dsig:DigestValue>
+        <dsig:DigestValue>dQIv/J+Zx9M+vCqu1Ci7os0cFSU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

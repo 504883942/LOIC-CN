@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IRC.dll" size="92672">
-      <assemblyIdentity name="IRC" version="0.4.0.40141" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IRC.dll" size="83968">
+      <assemblyIdentity name="IRC" version="0.4.0.41246" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5NiYrcFpQUZD2G5JgGQu7lrEKNE=</dsig:DigestValue>
+        <dsig:DigestValue>lagRNk3VTTbYn5ibBvt00J5K0Ds=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LOIC.exe" size="265216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LOIC.exe" size="263168">
       <assemblyIdentity name="LOIC" version="1.1.1.26" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6Hat+DfxgcrGhn1vcs6dEhnLNXg=</dsig:DigestValue>
+        <dsig:DigestValue>TaLvpse1Fyexy8KtEUHV5OeBpYo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

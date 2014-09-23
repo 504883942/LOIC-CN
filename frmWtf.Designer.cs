@@ -28,21 +28,22 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.SuspendLayout();
-			// 
-			// frmWtf
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::LOIC.Properties.Resources.WTF;
-			this.ClientSize = new System.Drawing.Size(416, 300);
-			this.ControlBox = false;
-			this.Name = "frmWtf";
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Click += new System.EventHandler(this.frmWtf_Click);
-			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmWtf_KeyDown);
-			this.ResumeLayout(false);
+            this.SuspendLayout();
+            // 
+            // frmWtf
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::LOIC.Properties.Resources.Sanjutou_01;
+            this.ClientSize = new System.Drawing.Size(418, 300);
+            this.ControlBox = false;
+            this.Name = "frmWtf";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frmWtf_Load);
+            this.Click += new System.EventHandler(this.frmWtf_Click);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmWtf_KeyDown);
+            this.ResumeLayout(false);
 
 		}
 

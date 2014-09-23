@@ -17,5 +17,10 @@ namespace LOIC
 		{
 			this.Dispose();
 		}
+
+        private void frmWtf_Load(object sender, EventArgs e)
+        {
+
+        }
 	}
 }

@@ -67,6 +67,13 @@ namespace LOIC.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Sanjutou_01 {
+            get {
+                object obj = ResourceManager.GetObject("Sanjutou_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap WTF {
             get {
                 object obj = ResourceManager.GetObject("WTF", resourceCulture);

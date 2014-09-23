@@ -1,4 +1,4 @@
-ï»¿/* LOIC - Low Orbit Ion Cannon
+/* LOIC - Low Orbit Ion Cannon
  * Released to the public domain
  * Enjoy getting v&, kids.
  */
@@ -50,19 +50,19 @@ namespace LOIC
 		}
 		private void Attack(bool toggle, bool on, bool silent)
 		{
-			if((cmdAttack.Text == "å¼€ å§‹ çˆ† èŠ" && toggle == true) || (toggle == false && on == true))
+			if((cmdAttack.Text == "¿ª Ê¼ ±¬ ¾Õ" && toggle == true) || (toggle == false && on == true))
 			{
 				try
 				{
 					try { iPort = Convert.ToInt32(txtPort.Text); }
-					catch { throw new Exception("ç«¯å£ä½ å¡«äº†æ²¡ï¼Ÿ"); }
+					catch { throw new Exception("¶Ë¿ÚÄãÌîÁËÃ»£¿"); }
 
 					try { iThreads = Convert.ToInt32(txtThreads.Text); }
-					catch { throw new Exception("çº¿ç¨‹æ•°ä½ å¡«äº†æ²¡ï¼Ÿ"); }
+					catch { throw new Exception("Ïß³ÌÊıÄãÌîÁËÃ»£¿"); }
 
 					sIP = txtTarget.Text;
-                    if (String.IsNullOrEmpty(sIP) || String.Equals(sIP, "æœª é” å®š !"))
-						throw new Exception("å…ˆé”å®šç›®æ ‡");
+                    if (String.IsNullOrEmpty(sIP) || String.Equals(sIP, "Î´ Ëø ¶¨ !"))
+						throw new Exception("ÏÈËø¶¨Ä¿±ê");
 
 					if( String.IsNullOrEmpty(sHost) ) sHost = sIP;
 					if( !sHost.Contains("://") ) sHost = String.Concat("http://", sHost);
@@ -74,25 +74,25 @@ namespace LOIC
 					if(String.Equals(sMethod, "UDP")) iProtocol = 2;
 					if(String.Equals(sMethod, "HTTP")) iProtocol = 3;
 					if(iProtocol == 0)
-						throw new Exception("é€‰æ‹©çˆ†èŠæ–¹å¼");
+						throw new Exception("Ñ¡Ôñ±¬¾Õ·½Ê½");
 
 					sData = txtData.Text.Replace("\\r", "\r").Replace("\\n", "\n");
 					if(String.IsNullOrEmpty(sData) && (iProtocol == 1 || iProtocol == 2))
-						throw new Exception("ä½ éœ€è¦å¡«å†™çˆ†èŠæ—¶å‘é€çš„åƒåœ¾æ•°æ®");
+						throw new Exception("ÄãĞèÒªÌîĞ´±¬¾ÕÊ±·¢ËÍµÄÀ¬»øÊı¾İ");
 
 					sSubsite = txtSubsite.Text;
 					if(!sSubsite.StartsWith("/") && (iProtocol == 3))
-						throw new Exception("ä½ å¿…é¡»è¾“å…¥ä¸€ä¸ªå­ç«™ (å¦‚ \"/\")");
+						throw new Exception("Äã±ØĞëÊäÈëÒ»¸ö×ÓÕ¾ (Èç \"/\")");
 
 					try { iTimeout = Convert.ToInt32(txtTimeout.Text); }
-					catch { throw new Exception("ä½ å¡«å†™å¥½è¶…æ—¶è®¾å®šäº†ä¹ˆï¼Ÿ"); }
+					catch { throw new Exception("ÄãÌîĞ´ºÃ³¬Ê±Éè¶¨ÁËÃ´£¿"); }
 				}
 				catch (Exception ex)
 				{
 					if(silent) return;
-					new frmWtf().Show(); MessageBox.Show(ex.Message, "ä½ å¹²äº†ä»€ä¹ˆï¼ï¼"); return;
+					new frmWtf().Show(); MessageBox.Show(ex.Message, "Äã¸ÉÁËÊ²Ã´£¡£¡£¡"); return;
 				}
-				cmdAttack.Text = "åœ æ­¢ çˆ† èŠ";
+				cmdAttack.Text = "Í£ Ö¹ ±¬ ¾Õ";
 
 				if(String.Equals(sMethod, "TCP") || String.Equals(sMethod, "UDP"))
 				{
@@ -116,7 +116,7 @@ namespace LOIC
 			}
 			else if(toggle == true || on == false)
 			{
-				cmdAttack.Text = "å¼€ å§‹ çˆ† èŠ";
+				cmdAttack.Text = "¿ª Ê¼ ±¬ ¾Õ";
 				if(xxp != null)
 				{
 					for (int a = 0; a < xxp.Length; a++)
@@ -140,7 +140,7 @@ namespace LOIC
 			{
 				if(silent) return;
 				new frmWtf().Show();
-				MessageBox.Show("ä½ å¿˜è¾“IPäº†");
+				MessageBox.Show("ÄãÍüÊäIPÁË");
 				return;
 			}
 			txtTarget.Text = txtTargetIP.Text;
@@ -153,7 +153,7 @@ namespace LOIC
 			{
 				if(silent) return;
 				new frmWtf().Show();
-				MessageBox.Show("ä½ å¿˜è¾“URLäº†");
+				MessageBox.Show("ÄãÍüÊäURLÁË");
 				return;
 			}
 			if( !sHost.StartsWith("http://") && !sHost.StartsWith("https://") ) sHost = String.Concat("http://", sHost);
@@ -162,7 +162,7 @@ namespace LOIC
 			{
 				if(silent) return;
 				new frmWtf().Show();
-				MessageBox.Show("è¿™ä¸ªURLæ²¡æœ‰æŒ‡å‘ä»»ä½•IP");
+				MessageBox.Show("Õâ¸öURLÃ»ÓĞÖ¸ÏòÈÎºÎIP");
 				return;
 			}
 		}
@@ -183,7 +183,7 @@ namespace LOIC
 				if(disableHive.Checked && enabled)
 				{
 					new frmWtf().Show();
-					MessageBox.Show("ä½ è¾“å…¥IRCåœ°å€äº†å—ï¼Ÿ");
+					MessageBox.Show("ÄãÊäÈëIRCµØÖ·ÁËÂğ£¿");
 					return;
 				}
 
@@ -196,7 +196,7 @@ namespace LOIC
 				ircenabled = enabled;
 				if(enabled)
 				{
-					label25.Text = "è¿æ¥ä¸­..";
+					label25.Text = "Á¬½ÓÖĞ..";
 					irc = new IrcClient();
 					irc.OnConnected += IrcConnected;
 					irc.OnReadLine += OnReadLine;
@@ -237,7 +237,7 @@ namespace LOIC
 					}
 					catch
 					{ }
-					label25.Text = "æœªè¿æ¥";
+					label25.Text = "Î´Á¬½Ó";
 				}
 			}
 			catch
@@ -267,12 +267,12 @@ namespace LOIC
 		}
 		private void IrcConnected(object o, EventArgs e)
 		{
-			label25.Text = "ç™»å½•ä¸­...";
+			label25.Text = "µÇÂ¼ÖĞ...";
 		}
 		private delegate void AddListBoxItemDelegate(object sender, ReadLineEventArgs e);
 		void OnNames(object sender, NamesEventArgs e)
 		{
-			SetStatus("è¿æ¥æˆåŠŸ!");
+			SetStatus("Á¬½Ó³É¹¦!");
 			if(OpList != null)
 			{
 				OpList.Clear();
@@ -540,7 +540,7 @@ namespace LOIC
 		}
 		private void frmMain_Load(object sender, EventArgs e)
 		{
-            this.Text = String.Format("LOIC-é˜¿å§†æ–¯ç‰¹æœ—å›æ—‹åŠ é€Ÿå–·æ°”å¼é˜¿å§†æ–¯ç‰¹æœ—ç‚®  | darknessomi æ±‰åŒ– | v. {0}", Application.ProductVersion);
+            this.Text = String.Format("LOIC-°¢Ä·Ë¹ÌØÀÊ»ØĞı¼ÓËÙÅçÆøÊ½°¢Ä·Ë¹ÌØÀÊÅÚ  | darknessomi ºº»¯ | v. {0}", Application.ProductVersion);
 		}
 		private void frmMain_Closing(object sender, FormClosingEventArgs e)
 		{

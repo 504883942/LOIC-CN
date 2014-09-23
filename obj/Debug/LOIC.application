@@ -11,18 +11,14 @@
     <deploymentProvider codebase="file://psf/Home/Desktop/LOIC.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LOIC.exe.manifest" size="4810">
+    <dependentAssembly dependencyType="install" codebase="LOIC.exe.manifest" size="4808">
       <assemblyIdentity name="LOIC.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-<<<<<<< HEAD
-        <dsig:DigestValue>A1FHQWBZuAKbkonTpKpxLgSl4wc=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>AKgJ7hgYDQxea6cjpUIANcuvIZQ=</dsig:DigestValue>
->>>>>>> parent of e5624a2... 修复乱码
+        <dsig:DigestValue>j1jzZimsonxfP9pMEVUn5X0mZJc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

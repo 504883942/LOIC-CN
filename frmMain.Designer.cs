@@ -1,4 +1,4 @@
-﻿namespace LOIC
+namespace LOIC
 {
 	partial class frmMain
 	{
@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmdTargetIP = new System.Windows.Forms.Button();
@@ -77,17 +76,17 @@
             this.label16 = new System.Windows.Forms.Label();
             this.TTip = new System.Windows.Forms.ToolTip(this.components);
             this.label24 = new System.Windows.Forms.Label();
-            this.enableHive = new System.Windows.Forms.RadioButton();
             this.tShowStats = new System.Windows.Forms.Timer(this.components);
             this.disableHive = new System.Windows.Forms.RadioButton();
+            this.enableHive = new System.Windows.Forms.RadioButton();
             this.label25 = new System.Windows.Forms.Label();
             this.txtIRCserver = new System.Windows.Forms.TextBox();
             this.txtIRCport = new System.Windows.Forms.TextBox();
             this.txtIRCchannel = new System.Windows.Forms.TextBox();
+            this.pBanner = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.pBanner = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -111,7 +110,7 @@
             this.groupBox1.Size = new System.Drawing.Size(488, 75);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "1. 选择你的爆菊目标";
+            this.groupBox1.Text = "1. Select your target";
             // 
             // label2
             // 
@@ -130,7 +129,7 @@
             this.cmdTargetIP.Name = "cmdTargetIP";
             this.cmdTargetIP.Size = new System.Drawing.Size(71, 22);
             this.cmdTargetIP.TabIndex = 4;
-            this.cmdTargetIP.Text = "锁 定";
+            this.cmdTargetIP.Text = "Lock on";
             this.cmdTargetIP.UseVisualStyleBackColor = false;
             this.cmdTargetIP.Click += new System.EventHandler(this.cmdTargetIP_Click);
             // 
@@ -143,7 +142,7 @@
             this.txtTargetIP.Name = "txtTargetIP";
             this.txtTargetIP.Size = new System.Drawing.Size(365, 20);
             this.txtTargetIP.TabIndex = 3;
-            this.TTip.SetToolTip(this.txtTargetIP, "如果你知道目标的IP，请输入并 “锁定”");
+            this.TTip.SetToolTip(this.txtTargetIP, "If you know your target\'s IP, enter the IP here and click \"Lock on\"");
             // 
             // label1
             // 
@@ -162,7 +161,7 @@
             this.cmdTargetURL.Name = "cmdTargetURL";
             this.cmdTargetURL.Size = new System.Drawing.Size(71, 22);
             this.cmdTargetURL.TabIndex = 2;
-            this.cmdTargetURL.Text = "锁 定";
+            this.cmdTargetURL.Text = "Lock on";
             this.cmdTargetURL.UseVisualStyleBackColor = false;
             this.cmdTargetURL.Click += new System.EventHandler(this.cmdTargetURL_Click);
             // 
@@ -175,7 +174,7 @@
             this.txtTargetURL.Name = "txtTargetURL";
             this.txtTargetURL.Size = new System.Drawing.Size(365, 20);
             this.txtTargetURL.TabIndex = 1;
-            this.TTip.SetToolTip(this.txtTargetURL, "如果你不知道目标的IP，请输入URL （网址）并 “锁定”");
+            this.TTip.SetToolTip(this.txtTargetURL, "If you don\'t know your target\'s IP, enter a URL here and click \"Lock on\"");
             // 
             // groupBox2
             // 
@@ -186,7 +185,7 @@
             this.groupBox2.Size = new System.Drawing.Size(758, 96);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "锁定的目标 IP";
+            this.groupBox2.Text = "Selected target";
             // 
             // txtTarget
             // 
@@ -199,9 +198,9 @@
             this.txtTarget.Size = new System.Drawing.Size(746, 72);
             this.txtTarget.TabIndex = 1;
             this.txtTarget.TabStop = false;
-            this.txtTarget.Text = "未 锁 定 !";
+            this.txtTarget.Text = "N O N E !";
             this.txtTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtTarget, "当前选中的爆菊目标");
+            this.TTip.SetToolTip(this.txtTarget, "The currently selected target");
             this.txtTarget.Enter += new System.EventHandler(this.txtTarget_Enter);
             // 
             // groupBox3
@@ -229,7 +228,7 @@
             this.groupBox3.Size = new System.Drawing.Size(758, 136);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "2. 选择你的爆菊方式";
+            this.groupBox3.Text = "2. Attack options";
             // 
             // chkAllowGzip
             // 
@@ -239,8 +238,8 @@
             this.chkAllowGzip.Name = "chkAllowGzip";
             this.chkAllowGzip.Size = new System.Drawing.Size(114, 18);
             this.chkAllowGzip.TabIndex = 29;
-            this.chkAllowGzip.Text = "使用 Gzip (HTTP)";
-            this.TTip.SetToolTip(this.chkAllowGzip, "开启HTTP的Gzip压缩格式支持");
+            this.chkAllowGzip.Text = "Use Gzip (HTTP)";
+            this.TTip.SetToolTip(this.chkAllowGzip, "Enable Gzip support for HTTP method");
             // 
             // label18
             // 
@@ -248,18 +247,18 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(124, 16);
             this.label18.TabIndex = 25;
-            this.label18.Text = "发送的 TCP / UDP 信息";
+            this.label18.Text = "TCP / UDP message";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chkAllowRandom
             // 
             this.chkAllowRandom.AutoSize = true;
-            this.chkAllowRandom.Location = new System.Drawing.Point(90, 110);
+            this.chkAllowRandom.Location = new System.Drawing.Point(65, 110);
             this.chkAllowRandom.Name = "chkAllowRandom";
-            this.chkAllowRandom.Size = new System.Drawing.Size(170, 18);
+            this.chkAllowRandom.Size = new System.Drawing.Size(255, 18);
             this.chkAllowRandom.TabIndex = 28;
-            this.chkAllowRandom.Text = "生成随机子网站或随机信息";
-            this.TTip.SetToolTip(this.chkAllowRandom, "开启生成随机子网站或随机信息功能");
+            this.chkAllowRandom.Text = "Append random chars to the subsite / message";
+            this.TTip.SetToolTip(this.chkAllowRandom, "Enable appending random chars to the subsite / message every request");
             this.chkAllowRandom.UseVisualStyleBackColor = true;
             // 
             // label17
@@ -268,7 +267,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(89, 17);
             this.label17.TabIndex = 24;
-            this.label17.Text = "HTTP 子网站";
+            this.label17.Text = "HTTP Subsite";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -277,7 +276,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 15);
             this.label9.TabIndex = 23;
-            this.label9.Text = "超时";
+            this.label9.Text = "Timeout";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -286,7 +285,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 15);
             this.label7.TabIndex = 22;
-            this.label7.Text = "线程";
+            this.label7.Text = "Threads";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -295,7 +294,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 15);
             this.label4.TabIndex = 21;
-            this.label4.Text = "模式";
+            this.label4.Text = "Method";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -304,7 +303,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 15);
             this.label6.TabIndex = 20;
-            this.label6.Text = "端口";
+            this.label6.Text = "Port";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
@@ -313,7 +312,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(374, 15);
             this.label20.TabIndex = 18;
-            this.label20.Text = "<= 快       爆菊速度       慢 =>";
+            this.label20.Text = "<= faster     Speed     slower =>";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chkWaitReply
@@ -323,10 +322,10 @@
             this.chkWaitReply.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkWaitReply.Location = new System.Drawing.Point(640, 77);
             this.chkWaitReply.Name = "chkWaitReply";
-            this.chkWaitReply.Size = new System.Drawing.Size(98, 18);
+            this.chkWaitReply.Size = new System.Drawing.Size(91, 18);
             this.chkWaitReply.TabIndex = 7;
-            this.chkWaitReply.Text = "等待目标答复";
-            this.TTip.SetToolTip(this.chkWaitReply, "服务器应答之前不停止连接");
+            this.chkWaitReply.Text = "Wait for reply";
+            this.TTip.SetToolTip(this.chkWaitReply, "Don\'t disconnect before the server\'s started to answer");
             this.chkWaitReply.UseVisualStyleBackColor = true;
             // 
             // txtData
@@ -339,10 +338,9 @@
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(333, 20);
             this.txtData.TabIndex = 3;
-            this.txtData.Text = "FUCK YOUR ASS";
+            this.txtData.Text = "U dun goofed";
             this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TTip.SetToolTip(this.txtData, "The data to send in TCP/UDP mode");
-            this.txtData.TextChanged += new System.EventHandler(this.txtData_TextChanged);
             // 
             // txtSubsite
             // 
@@ -370,7 +368,7 @@
             this.txtTimeout.TabIndex = 1;
             this.txtTimeout.Text = "9001";
             this.txtTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtTimeout, "最大未响应时间");
+            this.TTip.SetToolTip(this.txtTimeout, "Max time to wait for a response");
             // 
             // txtThreads
             // 
@@ -384,7 +382,7 @@
             this.txtThreads.TabIndex = 6;
             this.txtThreads.Text = "10";
             this.txtThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtThreads, "你要多少爆菊的线程");
+            this.TTip.SetToolTip(this.txtThreads, "How many users LOIC should emulate");
             // 
             // cbMethod
             // 
@@ -402,8 +400,7 @@
             this.cbMethod.Size = new System.Drawing.Size(75, 22);
             this.cbMethod.TabIndex = 5;
             this.cbMethod.Text = "TCP";
-            this.TTip.SetToolTip(this.cbMethod, "你想要爆菊的方式");
-            this.cbMethod.SelectedIndexChanged += new System.EventHandler(this.cbMethod_SelectedIndexChanged);
+            this.TTip.SetToolTip(this.cbMethod, "What type of attack to launch");
             // 
             // txtPort
             // 
@@ -417,7 +414,7 @@
             this.txtPort.TabIndex = 4;
             this.txtPort.Text = "80";
             this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTip.SetToolTip(this.txtPort, "你想要爆菊的端口（网站默认是80端口）");
+            this.TTip.SetToolTip(this.txtPort, "What port to attack (regular websites use 80)");
             // 
             // tbSpeed
             // 
@@ -438,7 +435,7 @@
             this.groupBox4.Size = new System.Drawing.Size(258, 75);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "3. 准备好了?";
+            this.groupBox4.Text = "3. Ready?";
             // 
             // cmdAttack
             // 
@@ -449,8 +446,8 @@
             this.cmdAttack.Name = "cmdAttack";
             this.cmdAttack.Size = new System.Drawing.Size(246, 50);
             this.cmdAttack.TabIndex = 1;
-            this.cmdAttack.Text = "开 始 爆 菊";
-            this.TTip.SetToolTip(this.cmdAttack, "猜猜目标菊花会怎样？");
+            this.cmdAttack.Text = "IMMA CHARGIN MAH LAZER";
+            this.TTip.SetToolTip(this.cmdAttack, "I sincerely hope you can guess what this button does.");
             this.cmdAttack.UseVisualStyleBackColor = false;
             this.cmdAttack.Click += new System.EventHandler(this.cmdAttack_Click);
             // 
@@ -477,7 +474,7 @@
             this.groupBox5.Size = new System.Drawing.Size(758, 68);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "爆菊状态";
+            this.groupBox5.Text = "Attack status";
             // 
             // label19
             // 
@@ -497,7 +494,7 @@
             this.lbFailed.TabIndex = 24;
             this.lbFailed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TTip.SetToolTip(this.lbFailed, "How many times (in total) the webserver didn\'t respond. High number = server down" +
-        ".");
+                    ".");
             // 
             // lbRequested
             // 
@@ -514,7 +511,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(101, 24);
             this.label22.TabIndex = 22;
-            this.label22.Text = "失败";
+            this.label22.Text = "Failed";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
@@ -523,7 +520,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(101, 24);
             this.label23.TabIndex = 21;
-            this.label23.Text = "请求";
+            this.label23.Text = "Requested";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbDownloaded
@@ -578,7 +575,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(101, 24);
             this.label12.TabIndex = 15;
-            this.label12.Text = "已下载";
+            this.label12.Text = "Downloaded";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -587,7 +584,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 24);
             this.label13.TabIndex = 14;
-            this.label13.Text = "正在下载";
+            this.label13.Text = "Downloading";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
@@ -596,7 +593,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(101, 24);
             this.label14.TabIndex = 13;
-            this.label14.Text = "请求";
+            this.label14.Text = "Requesting";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -605,7 +602,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(101, 24);
             this.label15.TabIndex = 12;
-            this.label15.Text = "连接";
+            this.label15.Text = "Connecting";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
@@ -614,7 +611,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(101, 24);
             this.label16.TabIndex = 11;
-            this.label16.Text = "空闲";
+            this.label16.Text = "Idle";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
@@ -622,23 +619,11 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(22, 452);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(167, 14);
+            this.label24.Size = new System.Drawing.Size(165, 14);
             this.label24.TabIndex = 14;
-            this.label24.Text = "github.com/darknessomi/LOIC-CN";
-            this.TTip.SetToolTip(this.label24, "前往项目主页");
+            this.label24.Text = "github.com/NewEraCracker/LOIC";
+            this.TTip.SetToolTip(this.label24, "Go to official page");
             this.label24.Click += new System.EventHandler(this.label24_Click);
-            // 
-            // enableHive
-            // 
-            this.enableHive.AutoSize = true;
-            this.enableHive.Location = new System.Drawing.Point(377, 15);
-            this.enableHive.Name = "enableHive";
-            this.enableHive.Size = new System.Drawing.Size(127, 18);
-            this.enableHive.TabIndex = 16;
-            this.enableHive.Text = "IRC 模式 (邪恶分身)";
-            this.TTip.SetToolTip(this.enableHive, "如果你想成为邪恶分身的话，请选择此模式");
-            this.enableHive.UseVisualStyleBackColor = true;
-            this.enableHive.CheckedChanged += new System.EventHandler(this.enableHive_CheckedChanged);
             // 
             // tShowStats
             // 
@@ -651,12 +636,24 @@
             this.disableHive.Checked = true;
             this.disableHive.Location = new System.Drawing.Point(212, 15);
             this.disableHive.Name = "disableHive";
-            this.disableHive.Size = new System.Drawing.Size(169, 18);
+            this.disableHive.Size = new System.Drawing.Size(163, 18);
             this.disableHive.TabIndex = 15;
             this.disableHive.TabStop = true;
-            this.disableHive.Text = "主机模式（这是邪恶本体）";
+            this.disableHive.Text = "Manual Mode (Do it yourself)";
             this.disableHive.UseVisualStyleBackColor = true;
             this.disableHive.CheckedChanged += new System.EventHandler(this.disableHive_CheckedChanged);
+            // 
+            // enableHive
+            // 
+            this.enableHive.AutoSize = true;
+            this.enableHive.Location = new System.Drawing.Point(377, 15);
+            this.enableHive.Name = "enableHive";
+            this.enableHive.Size = new System.Drawing.Size(124, 18);
+            this.enableHive.TabIndex = 16;
+            this.enableHive.Text = "IRC Mode (HiveMind)";
+            this.TTip.SetToolTip(this.enableHive, "Fill the IRC options if you wish to use this mode");
+            this.enableHive.UseVisualStyleBackColor = true;
+            this.enableHive.CheckedChanged += new System.EventHandler(this.enableHive_CheckedChanged);
             // 
             // label25
             // 
@@ -664,8 +661,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(210, 16);
             this.label25.TabIndex = 17;
-            this.label25.Text = "未连接";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
+            this.label25.Text = "Disconnected.";
             // 
             // txtIRCserver
             // 
@@ -699,33 +695,6 @@
             this.txtIRCchannel.TabIndex = 20;
             this.txtIRCchannel.Text = "#loic";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(502, 1);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 14);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "IRC 服务器";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(615, 1);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(31, 14);
-            this.label26.TabIndex = 22;
-            this.label26.Text = "端口";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(674, 1);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(31, 14);
-            this.label27.TabIndex = 23;
-            this.label27.Text = "频道";
-            // 
             // pBanner
             // 
             this.pBanner.Image = global::LOIC.Properties.Resources.LOIC;
@@ -734,7 +703,33 @@
             this.pBanner.Size = new System.Drawing.Size(184, 462);
             this.pBanner.TabIndex = 12;
             this.pBanner.TabStop = false;
-            this.pBanner.Click += new System.EventHandler(this.pBanner_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(502, 1);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 14);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "IRC server";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(615, 1);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(26, 14);
+            this.label26.TabIndex = 22;
+            this.label26.Text = "Port";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(674, 1);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(46, 14);
+            this.label27.TabIndex = 23;
+            this.label27.Text = "Channel";
             // 
             // frmMain
             // 
@@ -760,7 +755,6 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.LightBlue;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

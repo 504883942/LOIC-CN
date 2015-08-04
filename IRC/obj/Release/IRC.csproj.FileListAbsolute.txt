@@ -1,5 +1,0 @@
-\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC-CN\bin\Release\IRC.dll
-\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC-CN\bin\Release\IRC.pdb
-\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC-CN\IRC\obj\Release\ResolveAssemblyReference.cache
-\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC-CN\IRC\obj\Release\IRC.dll
-\\psf\Home\Documents\Visual Studio 2010\Projects\LOIC-CN\IRC\obj\Release\IRC.pdb

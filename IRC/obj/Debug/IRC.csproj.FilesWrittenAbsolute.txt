@@ -2,7 +2,7 @@
 /Users/omi/Documents/Visual Studio 2010/Projects/LOIC/bin/Debug/IRC.dll
 /Users/omi/Documents/Visual Studio 2010/Projects/LOIC/IRC/obj/Debug/IRC.dll
 /Users/omi/Documents/Visual Studio 2010/Projects/LOIC/IRC/obj/Debug/IRC.dll.mdb
-/Users/omi/Documents/Visual Studio 2010/Projects/LOIC-CN/bin/Debug/IRC.dll.mdb
-/Users/omi/Documents/Visual Studio 2010/Projects/LOIC-CN/bin/Debug/IRC.dll
-/Users/omi/Documents/Visual Studio 2010/Projects/LOIC-CN/IRC/obj/Debug/IRC.dll
-/Users/omi/Documents/Visual Studio 2010/Projects/LOIC-CN/IRC/obj/Debug/IRC.dll.mdb
+/Users/omi/Desktop/LOIC-CN-1a01d9188dfa01fc94dec2db31cc14b7f9d056c1/bin/Debug/IRC.dll.mdb
+/Users/omi/Desktop/LOIC-CN-1a01d9188dfa01fc94dec2db31cc14b7f9d056c1/bin/Debug/IRC.dll
+/Users/omi/Desktop/LOIC-CN-1a01d9188dfa01fc94dec2db31cc14b7f9d056c1/IRC/obj/Debug/IRC.dll
+/Users/omi/Desktop/LOIC-CN-1a01d9188dfa01fc94dec2db31cc14b7f9d056c1/IRC/obj/Debug/IRC.dll.mdb
